@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!--link icon gulir ke atas-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!--my css-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--icon-->
+    <link rel="icon" href="img/profile1.jpg" />
+
+    <title>mHFz</title>
+  </head>
+  <body>
+    <!--preloader-->
+    <div id="preloader">
+      <div id="background"></div>
+      <div class="top">
+        <h1 id="loading-text"></h1>
+        <h3 id="loading-h3"></h3>
+      </div>
+
+      <div class="container-pre">
+        <div class="ghost-copy">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+          <div class="four"></div>
+        </div>
+        <div class="ghost">
+          <div class="face">
+            <div class="eye"></div>
+            <div class="eye-right"></div>
+            <div class="mouth"></div>
+          </div>
+        </div>
+        <div class="shadow"></div>
+      </div>
+    </div>
+    <!--akhir dari preloader-->
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">mHFz</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificate">certificate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar-->
+
+    <!--jumbotron-->
+    <div id="jumbotron">
+      <section id="home" class="jumbotron jumbotron-fluid text-center">
+        <div class="profile-picture">
+          <img
+            src="img/profile1.jpg"
+            alt="Profile Picture"
+            class="animate-profile"
+          />
+        </div>
+
+        <!-- efek mengetik-->
+        <div class="typing">
+          <h1 id="typing-effect"></h1>
+        </div>
+        <!-- akhir efek mengetik-->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="rgb(110,112,150)"
+            fill-opacity="1"
+            d="M0,160L8.9,181.3C17.8,203,36,245,53,266.7C71.1,288,89,288,107,282.7C124.4,277,142,267,160,250.7C177.8,235,196,213,213,170.7C231.1,128,249,64,267,42.7C284.4,21,302,43,320,48C337.8,53,356,43,373,48C391.1,53,409,75,427,74.7C444.4,75,462,53,480,80C497.8,107,516,181,533,197.3C551.1,213,569,171,587,144C604.4,117,622,107,640,117.3C657.8,128,676,160,693,170.7C711.1,181,729,171,747,186.7C764.4,203,782,245,800,256C817.8,267,836,245,853,245.3C871.1,245,889,267,907,256C924.4,245,942,203,960,192C977.8,181,996,203,1013,213.3C1031.1,224,1049,224,1067,202.7C1084.4,181,1102,139,1120,128C1137.8,117,1156,139,1173,144C1191.1,149,1209,139,1227,133.3C1244.4,128,1262,128,1280,117.3C1297.8,107,1316,85,1333,101.3C1351.1,117,1369,171,1387,197.3C1404.4,224,1422,224,1431,224L1440,224L1440,320L1431.1,320C1422.2,320,1404,320,1387,320C1368.9,320,1351,320,1333,320C1315.6,320,1298,320,1280,320C1262.2,320,1244,320,1227,320C1208.9,320,1191,320,1173,320C1155.6,320,1138,320,1120,320C1102.2,320,1084,320,1067,320C1048.9,320,1031,320,1013,320C995.6,320,978,320,960,320C942.2,320,924,320,907,320C888.9,320,871,320,853,320C835.6,320,818,320,800,320C782.2,320,764,320,747,320C728.9,320,711,320,693,320C675.6,320,658,320,640,320C622.2,320,604,320,587,320C568.9,320,551,320,533,320C515.6,320,498,320,480,320C462.2,320,444,320,427,320C408.9,320,391,320,373,320C355.6,320,338,320,320,320C302.2,320,284,320,267,320C248.9,320,231,320,213,320C195.6,320,178,320,160,320C142.2,320,124,320,107,320C88.9,320,71,320,53,320C35.6,320,18,320,9,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+    </div>
+
+    <!-- akhir jumbotron-->
+
+    <!-- sertifikat -->
+    <section id="certificate">
+      <div class="team">
+        <div class="container">
+          <div class="team-title text-center">
+            <h1 class="h1">Certificate</h1>
+            <p class="p">The training i got</p>
+          </div>
+          <div class="wrapper">
+            <div class="carousel owl-carousel">
+              <!-- bar 1 -->
+              <img src="img/sertifikat/aws.png" alt="aws" srcset="" />
+              <img src="img/sertifikat/devops.png" alt="devops" srcset="" />
+              <img
+                src="img/sertifikat/pemogramanjava.png"
+                alt="pemograman dasar"
+                srcset=""
+              />
+              <!--bar2-->
+              <img
+                src="img/sertifikat/ciscodasar.png"
+                alt="ciscodasar"
+                srcset=""
+              />
+              <!-- bar3 -->
+              <img
+                src="img/sertifikat/jaringankomputer.png"
+                alt="jaringankomputerdasar"
+                srcset=""
+              />
+              <img
+                src="img/sertifikat/mikrotikdasar.png"
+                alt="mikrotikdasar"
+                srcset=""
+              />
+              <img
+                src="img/sertifikat/mikrotikmtcna.png"
+                alt="mikrotikmtcna"
+                srcset=""
+              />
+              <!-- selesai -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--akhir dari sertifikat -->
+
+    <!--project-->
+    <div id="project">
+      <section id="project">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Project</h2>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="img/IMG_edit.jpg"
+                  class="card-img-top"
+                  alt="project 1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="img/IMG_edit.jpg"
+                  class="card-img-top"
+                  alt="project 1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="img/IMG_edit.jpg"
+                  class="card-img-top"
+                  alt="project 1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="img/IMG_edit.jpg"
+                  class="card-img-top"
+                  alt="project 1"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img
+                  src="img/IMG_edit.jpg"
+                  class="card-img-top"
+                  alt="project 1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="rgb(206, 177, 177)"
+            fill-opacity="1"
+            d="M0,32L10,80C20,128,40,224,60,224C80,224,100,128,120,90.7C140,53,160,75,180,74.7C200,75,220,53,240,85.3C260,117,280,203,300,234.7C320,267,340,245,360,240C380,235,400,245,420,261.3C440,277,460,299,480,272C500,245,520,171,540,165.3C560,160,580,224,600,224C620,224,640,160,660,144C680,128,700,160,720,154.7C740,149,760,107,780,90.7C800,75,820,85,840,96C860,107,880,117,900,106.7C920,96,940,64,960,53.3C980,43,1000,53,1020,80C1040,107,1060,149,1080,154.7C1100,160,1120,128,1140,101.3C1160,75,1180,53,1200,42.7C1220,32,1240,32,1260,37.3C1280,43,1300,53,1320,69.3C1340,85,1360,107,1380,128C1400,149,1420,171,1430,181.3L1440,192L1440,320L1430,320C1420,320,1400,320,1380,320C1360,320,1340,320,1320,320C1300,320,1280,320,1260,320C1240,320,1220,320,1200,320C1180,320,1160,320,1140,320C1120,320,1100,320,1080,320C1060,320,1040,320,1020,320C1000,320,980,320,960,320C940,320,920,320,900,320C880,320,860,320,840,320C820,320,800,320,780,320C760,320,740,320,720,320C700,320,680,320,660,320C640,320,620,320,600,320C580,320,560,320,540,320C520,320,500,320,480,320C460,320,440,320,420,320C400,320,380,320,360,320C340,320,320,320,300,320C280,320,260,320,240,320C220,320,200,320,180,320C160,320,140,320,120,320C100,320,80,320,60,320C40,320,20,320,10,320L0,320Z"
+          ></path>
+        </svg>
+      </section>
+    </div>
+    <!--project-->
+
+    <!--contact-->
+    <div class="contact">
+      <section id="contact" class="py-5">
+        <div class="container">
+          <h2 class="text-center">Hubungi mHFz</h2>
+          <div class="row">
+            <div class="col-md-6 offset-md-3">
+              <form>
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">Pesan</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--contact-->
+
+    <!--footer-->
+    <footer class="footer text-black text-center pb-5">
+      <p>
+        created with love by
+        <a
+          href="http://"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-black fw-bold"
+          >mHFz</a
+        >
+        <a href="#" id="scroll-top"><i class="fa fa-arrow-up"></i></a>
+      </p>
+    </footer>
+    <!--akhir dari footer-->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="js/popper.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/Project.js"></script>
+    <script src="js/scrolltop.js"></script>
+    <script src="js/efekmengetik.js"></script>
+    <script src="js/scrolltrans.js"></script>
+    <script src="js/preloader.js"></script>
+    <script src="js/mengetikpreload.js"></script>
+  </body>
+</html>

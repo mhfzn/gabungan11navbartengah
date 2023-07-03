@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Lato");
+
+.top {
+  padding-top: 7rem;
+  margin-top: 30px;
+}
+
+.container-pre {
+  margin: 0 auto;
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-top: -40px;
+}
+
+.ghost {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: #ededed;
+  border: 1px solid #bfc0c0;
+  border-bottom: none;
+  animation: float 2s ease-out infinite;
+}
+
+.ghost-copy {
+  width: 50%;
+  height: 53%;
+  left: 25%;
+  top: 10%;
+  position: absolute;
+  border-radius: 50% 50% 0 0;
+  background: #ededed;
+  border: 1px solid #bfc0c0;
+  border-bottom: none;
+  animation: float 2s ease-out infinite;
+  z-index: 0;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  top: 20%;
+}
+
+.eye,
+.eye-right {
+  position: absolute;
+  background: #585959;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  top: 40%;
+}
+
+.eye {
+  left: 25%;
+}
+
+.eye-right {
+  right: 25%;
+}
+
+.mouth {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 10px;
+  height: 10px;
+  border: 3px solid;
+  border-radius: 50%;
+  border-color: transparent #585959 #585959 transparent;
+  transform: rotate(45deg);
+}
+
+.one,
+.two,
+.three,
+.four {
+  position: absolute;
+  background: #ededed;
+  top: 85%;
+  width: 25%;
+  height: 23%;
+  border: 1px solid #bfc0c0;
+  z-index: 0;
+}
+
+.one {
+  border-radius: 0 0 100% 30%;
+  left: -1px;
+}
+
+.two {
+  left: 23%;
+  border-radius: 0 0 50% 50%;
+}
+
+.three {
+  left: 50%;
+  border-radius: 0 0 50% 50%;
+}
+
+.four {
+  left: 74.5%;
+  border-radius: 0 0 30% 100%;
+}
+
+.shadow {
+  position: absolute;
+  width: 30%;
+  height: 7%;
+  background: #bfc0c0;
+  left: 35%;
+  top: 80%;
+  border-radius: 50%;
+  animation: scale 2s infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+/*text styling*/
+#loading-text {
+  font-family: "Abril Fatface", serif;
+  color: #ededed;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  text-shadow: 3px 3px 5px rgba(1, 1, 1, 0.5);
+}
+
+#loading-h3 {
+  font-family: "Lato", sans-serif;
+  padding-top: 3rem;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #dee4e4;
+  margin-top: -20px;
+  font-weight: 900;
+  text-shadow: 3px 3px 5px rgba(1, 1, 1, 0.5);
+}
+
+#preloader {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(206, 177, 177);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 129993994;
+  display: grid;
+  place-content: center;
+}
+
+@keyframes profile {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30%;
+  }
+
+  to {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+.animate-profile {
+  animation: profile 4s ease-in-out infinite;
+  width: 300px; /* Ubah ukuran gambar sesuai keinginan */
+  height: 300px;
+}
+
+#scroll-top {
+  display: none; /* Sembunyikan tombol gulir ke atas secara default */
+  position: fixed; /* Tetap di posisi tetap saat digulir */
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999; /* Pastikan tombol tampil di atas elemen lain */
+  width: 40px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 24px;
+  line-height: 40px;
+  transition: opacity 0.3s ease;
+}
+#scroll-top:hover {
+  opacity: 0.7; /* Tampilkan transparansi ketika tombol dihover */
+}
+
+/* navbar */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(42, 43, 56, 0.5);
+  border: 0.2rem solid transparent;
+  -webkit-backdrop-filter: blur(104px);
+  backdrop-filter: blur(104px);
+  border-radius: 1rem;
+  background-color: rgb(206, 177, 177);
+}
+.navbar-transparent {
+  background-color: transparent !important;
+}
+
+/* Gaya font pada navbar transparan */
+.navbar.navbar-transparent .navbar-brand,
+.navbar.navbar-transparent .navbar-nav .nav-link {
+  color: #0d6efd; /* Warna font pada navbar saat transparan */
+}
+/* Gaya tombol navbar tombol saat transparan */
+.navbar.navbar-transparent .navbar-toggler {
+  background-color: #0d6efd; /* Warna tombol saat transparan */
+}
+
+/* akhir dari navbar*/
+
+.img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.typing {
+  position: relative;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+#typing-effect {
+  padding-top: 2rem;
+  z-index: 1;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 3px 5px rgba(1, 1, 1, 0.5);
+}
+
+/*jumbotron*/
+.jumbotron {
+  padding-top: 5rem;
+  background-color: rgb(206, 177, 177);
+}
+/*jumbotron*/
+
+/*owl carousel */
+#certificate {
+  padding-top: 7rem;
+  background-color: rgb(110, 112, 150);
+}
+.team .p {
+  padding-bottom: 2rem;
+}
+.wrapper {
+  width: 100%;
+}
+.carousel {
+  max-width: 2100px;
+  border: none;
+}
+.carousel .card-1 {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+}
+.carousel .card-2 {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+}
+.carousel .card-3 {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+}
+.carousel .card-4 {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+}
+.carousel .card-5 {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+}
+.carousel .card-6 {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+}
+.carousel .card-7 {
+  border: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+}
+/* project sudah jadi */
+#project {
+  background-color: rgb(110, 112, 150);
+  padding-top: 3rem;
+}
+#project .col {
+  padding-bottom: 2rem;
+}
+/* contact */
+.contact {
+  background-color: rgb(206, 177, 177);
+}
+/* footer */
+.footer {
+  background-color: rgb(206, 177, 177);
+}
